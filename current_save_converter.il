@@ -22,7 +22,7 @@ procedure( RunCurrentParserFromForm( form )
         scsFile = form->scsPathField->value
         
         ;; Python 脚本的绝对路径 (请确保此路径正确)
-        pyScript = "./scripts/pss_scsg_file.py"   
+        pyScript = "~/skill_scripts/pss_scsg_file.py"   
         logFile  = "/tmp/ade_parser_log.txt"
 
         ;; =========================================================
