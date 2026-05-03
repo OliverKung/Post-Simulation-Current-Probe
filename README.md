@@ -59,7 +59,7 @@ if( isFile(simplifyFilename("~/scripts/current_save_converter.il")) then
 2. 运行结束后会弹出 **Parser Result (V4.3)** 对话框，显示：
     - 生成的 `.scs` 文件路径。
     - Python 运行日志摘要（包括处理的信号数量等）。
-![[Pasted image 20260503171226.png]]
+![][Pasted image 20260503171226.png]
 ## 仿真集成
 生成的 `.scs` 文件包含了 Spectre 的 `save` 指令。您可以直接在 ADE Explorer 中将其添加为定义文件：
 - `Setup -> Model Libraries -> Add File`
