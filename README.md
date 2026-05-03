@@ -38,18 +38,20 @@ if( isFile(simplifyFilename("~/scripts/current_save_converter.il")) then
 ## 使用步骤
 ### 确认安装正常
 观察Virtuoso启动之后的窗口（这个窗口学名为CIW），如果出现如下图的字样则说明加载成功，如果没有请返回上一步检查是否配置错误。
-![[pic/ciw_load.png]]
+
+![alt_text](pic/ciw_load.png)
+
 ### 启动工具
 1. 打开您的 **ADE Explorer** 窗口。
 2. 在顶部菜单栏最右侧找到 **[PostSim]** 菜单。
 3. 点击 **Generate Current Probe**。
-![[pic/20260503170857.png]]
+![](pic/20260503170857.png)
 ### 配置输入输出路径
 工具会弹出一个设置对话框：
 - **Input CSV Path:** 填入您打算导出的信号列表文件名（默认路径为 `/tmp/ade_signals_export.csv`）。
 - **Output SCS Path:** 填入转换后生成的 `.scs` 文件路径（默认在当前工程目录下）。
 - 点击 **OK** 确认。
-    ![[pic/20260503170928.png]]
+    ![](pic/20260503170928.png)
 
 ### 确认原生导出对话框
 这里因为Virtuoso提供的API太蠢了，因此需要二次确认一次，直接选中对应的csv或者在下面输入文件名都可以。
@@ -59,7 +61,7 @@ if( isFile(simplifyFilename("~/scripts/current_save_converter.il")) then
 2. 运行结束后会弹出 **Parser Result (V4.3)** 对话框，显示：
     - 生成的 `.scs` 文件路径。
     - Python 运行日志摘要（包括处理的信号数量等）。
-![][pic/20260503171226.png]
+![](pic/20260503171226.png)
 ## 仿真集成
 生成的 `.scs` 文件包含了 Spectre 的 `save` 指令。您可以直接在 ADE Explorer 中将其添加为定义文件：
 - `Setup -> Model Libraries -> Add File`
