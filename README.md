@@ -38,7 +38,7 @@ if( isFile(simplifyFilename("~/scripts/current_save_converter.il")) then
 ## 使用步骤
 ### 确认安装正常
 观察Virtuoso启动之后的窗口（这个窗口学名为CIW），如果出现如下图的字样则说明加载成功，如果没有请返回上一步检查是否配置错误。
-![[pic/20260503164733.png]]
+![[pic/ciw_load.png]]
 ### 启动工具
 1. 打开您的 **ADE Explorer** 窗口。
 2. 在顶部菜单栏最右侧找到 **[PostSim]** 菜单。
@@ -59,7 +59,7 @@ if( isFile(simplifyFilename("~/scripts/current_save_converter.il")) then
 2. 运行结束后会弹出 **Parser Result (V4.3)** 对话框，显示：
     - 生成的 `.scs` 文件路径。
     - Python 运行日志摘要（包括处理的信号数量等）。
-![][20260503171226.png]
+![][pic/20260503171226.png]
 ## 仿真集成
 生成的 `.scs` 文件包含了 Spectre 的 `save` 指令。您可以直接在 ADE Explorer 中将其添加为定义文件：
 - `Setup -> Model Libraries -> Add File`
